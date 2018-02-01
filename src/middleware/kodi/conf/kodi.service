@@ -1,0 +1,13 @@
+[Unit]
+Description=Kodi
+After=network.target
+
+[Service]
+User=pi
+Group=pi
+Type=idle
+ExecStart=/usr/bin/kodi-standalone
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
